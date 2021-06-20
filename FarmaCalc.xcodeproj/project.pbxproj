@@ -11,6 +11,10 @@
 		551F8086267FD18C00A52997 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8085267FD18C00A52997 /* Realm */; };
 		551F8088267FD19600A52997 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8087267FD19600A52997 /* Realm */; };
 		551F808A267FD19600A52997 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8089267FD19600A52997 /* RealmSwift */; };
+		551F808D267FD72200A52997 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808C267FD72200A52997 /* DataManager.swift */; };
+		551F8090267FE3A400A52997 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808F267FE3A400A52997 /* HomeViewModel.swift */; };
+		551F8091267FE3A400A52997 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808F267FE3A400A52997 /* HomeViewModel.swift */; };
+		551F8092267FE3A800A52997 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808C267FD72200A52997 /* DataManager.swift */; };
 		55A1085F267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
 		55A10860267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
 		55A10873267F0353006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10872267F0353006597F4 /* SPStorkController */; };
@@ -45,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		551F808C267FD72200A52997 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		551F808F267FE3A400A52997 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		55B915DC267C621100E7E368 /* Info_hg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_hg.plist; sourceTree = "<group>"; };
 		55C9FC71267C3CCF003EC835 /* FarmaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551F808B267FD50600A52997 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				551F808C267FD72200A52997 /* DataManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		551F808E267FE39600A52997 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				551F808F267FE3A400A52997 /* HomeViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		55A1085C267EF702006597F4 /* External */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +155,7 @@
 		55C9FC73267C3CCF003EC835 /* FarmaCalc */ = {
 			isa = PBXGroup;
 			children = (
-				55A1085C267EF702006597F4 /* External */,
 				55C9FCBA267C57A3003EC835 /* Common */,
-				55C9FCAE267C42D1003EC835 /* Extensions */,
 				55C9FC89267C3DDA003EC835 /* Components */,
 				55C9FC88267C3CEB003EC835 /* Supporting Files */,
 			);
@@ -175,6 +195,7 @@
 		55C9FCA5267C411D003EC835 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				551F808E267FE39600A52997 /* ViewModels */,
 				55C9FCAA267C41E4003EC835 /* Views */,
 				55C9FCA6267C418A003EC835 /* ViewControllers */,
 			);
@@ -208,6 +229,9 @@
 		55C9FCBA267C57A3003EC835 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				551F808B267FD50600A52997 /* Managers */,
+				55C9FCAE267C42D1003EC835 /* Extensions */,
+				55A1085C267EF702006597F4 /* External */,
 				55C9FCB7267C5592003EC835 /* IntegratedController.swift */,
 			);
 			name = Common;
@@ -365,6 +389,8 @@
 				55C9FC75267C3CCF003EC835 /* AppDelegate.swift in Sources */,
 				55C9FCAC267C41F6003EC835 /* HomeView.swift in Sources */,
 				55C9FC77267C3CCF003EC835 /* SceneDelegate.swift in Sources */,
+				551F8090267FE3A400A52997 /* HomeViewModel.swift in Sources */,
+				551F808D267FD72200A52997 /* DataManager.swift in Sources */,
 				55C9FCA8267C41A5003EC835 /* HomeViewController.swift in Sources */,
 				55C9FCB0267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
 				55C9FCB8267C5592003EC835 /* IntegratedController.swift in Sources */,
@@ -376,7 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C9FC8C267C3F4C003EC835 /* AppDelegate.swift in Sources */,
+				551F8092267FE3A800A52997 /* DataManager.swift in Sources */,
 				55C9FCAD267C41F6003EC835 /* HomeView.swift in Sources */,
+				551F8091267FE3A400A52997 /* HomeViewModel.swift in Sources */,
 				55C9FC8D267C3F4C003EC835 /* SceneDelegate.swift in Sources */,
 				55C9FCA9267C41A5003EC835 /* HomeViewController.swift in Sources */,
 				55C9FCB1267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
