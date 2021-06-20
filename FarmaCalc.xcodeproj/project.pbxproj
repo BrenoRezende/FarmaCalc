@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551F8084267FD18C00A52997 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8083267FD18C00A52997 /* RealmSwift */; };
+		551F8086267FD18C00A52997 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8085267FD18C00A52997 /* Realm */; };
+		551F8088267FD19600A52997 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8087267FD19600A52997 /* Realm */; };
+		551F808A267FD19600A52997 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8089267FD19600A52997 /* RealmSwift */; };
 		55A1085F267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
 		55A10860267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
 		55A10873267F0353006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10872267F0353006597F4 /* SPStorkController */; };
@@ -64,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551F8086267FD18C00A52997 /* Realm in Frameworks */,
+				551F8084267FD18C00A52997 /* RealmSwift in Frameworks */,
 				55A10873267F0353006597F4 /* SPStorkController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551F808A267FD19600A52997 /* RealmSwift in Frameworks */,
+				551F8088267FD19600A52997 /* Realm in Frameworks */,
 				55A10875267F0360006597F4 /* SPStorkController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +238,8 @@
 			name = FarmaCalc;
 			packageProductDependencies = (
 				55A10872267F0353006597F4 /* SPStorkController */,
+				551F8083267FD18C00A52997 /* RealmSwift */,
+				551F8085267FD18C00A52997 /* Realm */,
 			);
 			productName = FarmaCalc;
 			productReference = 55C9FC71267C3CCF003EC835 /* FarmaCalc.app */;
@@ -250,6 +260,8 @@
 			name = FarmaCalc_HG;
 			packageProductDependencies = (
 				55A10874267F0360006597F4 /* SPStorkController */,
+				551F8087267FD19600A52997 /* Realm */,
+				551F8089267FD19600A52997 /* RealmSwift */,
 			);
 			productName = FarmaCalc;
 			productReference = 55C9FC95267C3F4C003EC835 /* FarmaCalc_HG.app */;
@@ -302,6 +314,7 @@
 			mainGroup = 55C9FC68267C3CCF003EC835;
 			packageReferences = (
 				55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */,
+				551F8082267FD18C00A52997 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 55C9FC72267C3CCF003EC835 /* Products */;
 			projectDirPath = "";
@@ -681,6 +694,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		551F8082267FD18C00A52997 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.8.0;
+			};
+		};
 		55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ivanvorobei/SPStorkController";
@@ -692,6 +713,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		551F8083267FD18C00A52997 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551F8082267FD18C00A52997 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		551F8085267FD18C00A52997 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551F8082267FD18C00A52997 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		551F8087267FD19600A52997 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551F8082267FD18C00A52997 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		551F8089267FD19600A52997 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551F8082267FD18C00A52997 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
 		55A10872267F0353006597F4 /* SPStorkController */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */;
