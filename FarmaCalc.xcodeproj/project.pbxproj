@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55A1085F267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
+		55A10860267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
+		55A10862267EFE4D006597F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55A10861267EFE4D006597F4 /* GoogleService-Info.plist */; };
+		55A10863267EFE4D006597F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55A10861267EFE4D006597F4 /* GoogleService-Info.plist */; };
+		55A10866267F002E006597F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10865267F002E006597F4 /* FirebaseAnalytics */; };
+		55A10868267F002E006597F4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10867267F002E006597F4 /* FirebaseFirestore */; };
+		55A1086A267F002E006597F4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10869267F002E006597F4 /* FirebaseCrashlytics */; };
+		55A1086C267F0049006597F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A1086B267F0049006597F4 /* FirebaseAnalytics */; };
+		55A1086E267F0049006597F4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A1086D267F0049006597F4 /* FirebaseCrashlytics */; };
+		55A10870267F0049006597F4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 55A1086F267F0049006597F4 /* FirebaseFirestore */; };
+		55A10873267F0353006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10872267F0353006597F4 /* SPStorkController */; };
+		55A10875267F0360006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10874267F0360006597F4 /* SPStorkController */; };
+		55C9FC75267C3CCF003EC835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC74267C3CCF003EC835 /* AppDelegate.swift */; };
+		55C9FC77267C3CCF003EC835 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC76267C3CCF003EC835 /* SceneDelegate.swift */; };
+		55C9FC7E267C3CCF003EC835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C9FC7D267C3CCF003EC835 /* Assets.xcassets */; };
+		55C9FC81267C3CCF003EC835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C9FC7F267C3CCF003EC835 /* LaunchScreen.storyboard */; };
+		55C9FC8C267C3F4C003EC835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC74267C3CCF003EC835 /* AppDelegate.swift */; };
+		55C9FC8D267C3F4C003EC835 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC76267C3CCF003EC835 /* SceneDelegate.swift */; };
+		55C9FC90267C3F4C003EC835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C9FC7F267C3CCF003EC835 /* LaunchScreen.storyboard */; };
+		55C9FC91267C3F4C003EC835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C9FC7D267C3CCF003EC835 /* Assets.xcassets */; };
+		55C9FC9E267C4068003EC835 /* FarmaCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC9D267C4068003EC835 /* FarmaCalcTests.swift */; };
+		55C9FCA8267C41A5003EC835 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCA7267C41A5003EC835 /* HomeViewController.swift */; };
+		55C9FCA9267C41A5003EC835 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCA7267C41A5003EC835 /* HomeViewController.swift */; };
+		55C9FCAC267C41F6003EC835 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAB267C41F6003EC835 /* HomeView.swift */; };
+		55C9FCAD267C41F6003EC835 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAB267C41F6003EC835 /* HomeView.swift */; };
+		55C9FCB0267C42E6003EC835 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */; };
+		55C9FCB1267C42E6003EC835 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */; };
+		55C9FCB8267C5592003EC835 /* IntegratedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCB7267C5592003EC835 /* IntegratedController.swift */; };
+		55C9FCB9267C5592003EC835 /* IntegratedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCB7267C5592003EC835 /* IntegratedController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55C9FCA0267C4068003EC835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C9FC69267C3CCF003EC835 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C9FC70267C3CCF003EC835;
+			remoteInfo = FarmaCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		55A10861267EFE4D006597F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55B915DC267C621100E7E368 /* Info_hg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_hg.plist; sourceTree = "<group>"; };
+		55C9FC71267C3CCF003EC835 /* FarmaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C9FC74267C3CCF003EC835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55C9FC76267C3CCF003EC835 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		55C9FC7D267C3CCF003EC835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55C9FC80267C3CCF003EC835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55C9FC82267C3CCF003EC835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C9FC95267C3F4C003EC835 /* FarmaCalc_HG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmaCalc_HG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C9FC9B267C4068003EC835 /* FarmaCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmaCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C9FC9D267C4068003EC835 /* FarmaCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmaCalcTests.swift; sourceTree = "<group>"; };
+		55C9FC9F267C4068003EC835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C9FCA7267C41A5003EC835 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55C9FCAB267C41F6003EC835 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		55C9FCB7267C5592003EC835 /* IntegratedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratedController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C9FC6E267C3CCF003EC835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A10866267F002E006597F4 /* FirebaseAnalytics in Frameworks */,
+				55A1086A267F002E006597F4 /* FirebaseCrashlytics in Frameworks */,
+				55A10868267F002E006597F4 /* FirebaseFirestore in Frameworks */,
+				55A10873267F0353006597F4 /* SPStorkController in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C9FC8E267C3F4C003EC835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A1086E267F0049006597F4 /* FirebaseCrashlytics in Frameworks */,
+				55A10870267F0049006597F4 /* FirebaseFirestore in Frameworks */,
+				55A1086C267F0049006597F4 /* FirebaseAnalytics in Frameworks */,
+				55A10875267F0360006597F4 /* SPStorkController in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C9FC98267C4068003EC835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55A1085C267EF702006597F4 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				55A1085D267EF709006597F4 /* Fonts */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		55A1085D267EF709006597F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		55C9FC68267C3CCF003EC835 = {
+			isa = PBXGroup;
+			children = (
+				55C9FC73267C3CCF003EC835 /* FarmaCalc */,
+				55C9FC9C267C4068003EC835 /* FarmaCalcTests */,
+				55C9FC72267C3CCF003EC835 /* Products */,
+				55C9FCBB267C5A7E003EC835 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55C9FC72267C3CCF003EC835 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FC71267C3CCF003EC835 /* FarmaCalc.app */,
+				55C9FC95267C3F4C003EC835 /* FarmaCalc_HG.app */,
+				55C9FC9B267C4068003EC835 /* FarmaCalcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C9FC73267C3CCF003EC835 /* FarmaCalc */ = {
+			isa = PBXGroup;
+			children = (
+				55A1085C267EF702006597F4 /* External */,
+				55C9FCBA267C57A3003EC835 /* Common */,
+				55C9FCAE267C42D1003EC835 /* Extensions */,
+				55C9FC89267C3DDA003EC835 /* Components */,
+				55C9FC88267C3CEB003EC835 /* Supporting Files */,
+			);
+			path = FarmaCalc;
+			sourceTree = "<group>";
+		};
+		55C9FC88267C3CEB003EC835 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FC7D267C3CCF003EC835 /* Assets.xcassets */,
+				55C9FC74267C3CCF003EC835 /* AppDelegate.swift */,
+				55C9FC76267C3CCF003EC835 /* SceneDelegate.swift */,
+				55C9FC7F267C3CCF003EC835 /* LaunchScreen.storyboard */,
+				55B915DC267C621100E7E368 /* Info_hg.plist */,
+				55C9FC82267C3CCF003EC835 /* Info.plist */,
+				55A10861267EFE4D006597F4 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55C9FC89267C3DDA003EC835 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FCA5267C411D003EC835 /* Home */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		55C9FC9C267C4068003EC835 /* FarmaCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FC9D267C4068003EC835 /* FarmaCalcTests.swift */,
+				55C9FC9F267C4068003EC835 /* Info.plist */,
+			);
+			path = FarmaCalcTests;
+			sourceTree = "<group>";
+		};
+		55C9FCA5267C411D003EC835 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FCAA267C41E4003EC835 /* Views */,
+				55C9FCA6267C418A003EC835 /* ViewControllers */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		55C9FCA6267C418A003EC835 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FCA7267C41A5003EC835 /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		55C9FCAA267C41E4003EC835 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FCAB267C41F6003EC835 /* HomeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		55C9FCAE267C42D1003EC835 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		55C9FCBA267C57A3003EC835 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				55C9FCB7267C5592003EC835 /* IntegratedController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		55C9FCBB267C5A7E003EC835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C9FC70267C3CCF003EC835 /* FarmaCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C9FC85267C3CCF003EC835 /* Build configuration list for PBXNativeTarget "FarmaCalc" */;
+			buildPhases = (
+				55C9FC6D267C3CCF003EC835 /* Sources */,
+				55C9FC6E267C3CCF003EC835 /* Frameworks */,
+				55C9FC6F267C3CCF003EC835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FarmaCalc;
+			packageProductDependencies = (
+				55A10865267F002E006597F4 /* FirebaseAnalytics */,
+				55A10867267F002E006597F4 /* FirebaseFirestore */,
+				55A10869267F002E006597F4 /* FirebaseCrashlytics */,
+				55A10872267F0353006597F4 /* SPStorkController */,
+			);
+			productName = FarmaCalc;
+			productReference = 55C9FC71267C3CCF003EC835 /* FarmaCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55C9FC8A267C3F4C003EC835 /* FarmaCalc_HG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C9FC92267C3F4C003EC835 /* Build configuration list for PBXNativeTarget "FarmaCalc_HG" */;
+			buildPhases = (
+				55C9FC8B267C3F4C003EC835 /* Sources */,
+				55C9FC8E267C3F4C003EC835 /* Frameworks */,
+				55C9FC8F267C3F4C003EC835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FarmaCalc_HG;
+			packageProductDependencies = (
+				55A1086B267F0049006597F4 /* FirebaseAnalytics */,
+				55A1086D267F0049006597F4 /* FirebaseCrashlytics */,
+				55A1086F267F0049006597F4 /* FirebaseFirestore */,
+				55A10874267F0360006597F4 /* SPStorkController */,
+			);
+			productName = FarmaCalc;
+			productReference = 55C9FC95267C3F4C003EC835 /* FarmaCalc_HG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55C9FC9A267C4068003EC835 /* FarmaCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C9FCA2267C4068003EC835 /* Build configuration list for PBXNativeTarget "FarmaCalcTests" */;
+			buildPhases = (
+				55C9FC97267C4068003EC835 /* Sources */,
+				55C9FC98267C4068003EC835 /* Frameworks */,
+				55C9FC99267C4068003EC835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C9FCA1267C4068003EC835 /* PBXTargetDependency */,
+			);
+			name = FarmaCalcTests;
+			productName = FarmaCalcTests;
+			productReference = 55C9FC9B267C4068003EC835 /* FarmaCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C9FC69267C3CCF003EC835 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					55C9FC70267C3CCF003EC835 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					55C9FC9A267C4068003EC835 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 55C9FC70267C3CCF003EC835;
+					};
+				};
+			};
+			buildConfigurationList = 55C9FC6C267C3CCF003EC835 /* Build configuration list for PBXProject "FarmaCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C9FC68267C3CCF003EC835;
+			packageReferences = (
+				55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */,
+			);
+			productRefGroup = 55C9FC72267C3CCF003EC835 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55C9FC70267C3CCF003EC835 /* FarmaCalc */,
+				55C9FC8A267C3F4C003EC835 /* FarmaCalc_HG */,
+				55C9FC9A267C4068003EC835 /* FarmaCalcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55C9FC6F267C3CCF003EC835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A1085F267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */,
+				55A10862267EFE4D006597F4 /* GoogleService-Info.plist in Resources */,
+				55C9FC81267C3CCF003EC835 /* LaunchScreen.storyboard in Resources */,
+				55C9FC7E267C3CCF003EC835 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C9FC8F267C3F4C003EC835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A10860267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */,
+				55A10863267EFE4D006597F4 /* GoogleService-Info.plist in Resources */,
+				55C9FC90267C3F4C003EC835 /* LaunchScreen.storyboard in Resources */,
+				55C9FC91267C3F4C003EC835 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C9FC99267C4068003EC835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C9FC6D267C3CCF003EC835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C9FC75267C3CCF003EC835 /* AppDelegate.swift in Sources */,
+				55C9FCAC267C41F6003EC835 /* HomeView.swift in Sources */,
+				55C9FC77267C3CCF003EC835 /* SceneDelegate.swift in Sources */,
+				55C9FCA8267C41A5003EC835 /* HomeViewController.swift in Sources */,
+				55C9FCB0267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
+				55C9FCB8267C5592003EC835 /* IntegratedController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C9FC8B267C3F4C003EC835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C9FC8C267C3F4C003EC835 /* AppDelegate.swift in Sources */,
+				55C9FCAD267C41F6003EC835 /* HomeView.swift in Sources */,
+				55C9FC8D267C3F4C003EC835 /* SceneDelegate.swift in Sources */,
+				55C9FCA9267C41A5003EC835 /* HomeViewController.swift in Sources */,
+				55C9FCB1267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
+				55C9FCB9267C5592003EC835 /* IntegratedController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C9FC97267C4068003EC835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C9FC9E267C4068003EC835 /* FarmaCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55C9FCA1267C4068003EC835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C9FC70267C3CCF003EC835 /* FarmaCalc */;
+			targetProxy = 55C9FCA0267C4068003EC835 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55C9FC7F267C3CCF003EC835 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55C9FC80267C3CCF003EC835 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55C9FC83267C3CCF003EC835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55C9FC84267C3CCF003EC835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55C9FC86267C3CCF003EC835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = brezende.com.FarmaCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		55C9FC87267C3CCF003EC835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = brezende.com.FarmaCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		55C9FC93267C3F4C003EC835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9EJ4448SJB;
+				INFOPLIST_FILE = "$(SRCROOT)/FarmaCalc/Info_hg.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = "-DHG";
+				PRODUCT_BUNDLE_IDENTIFIER = brezende.com.FarmaCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		55C9FC94267C3F4C003EC835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9EJ4448SJB;
+				INFOPLIST_FILE = "$(SRCROOT)/FarmaCalc/Info_hg.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = "-DHG";
+				PRODUCT_BUNDLE_IDENTIFIER = brezende.com.FarmaCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		55C9FCA3267C4068003EC835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brezende.com.FarmaCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmaCalc.app/FarmaCalc";
+			};
+			name = Debug;
+		};
+		55C9FCA4267C4068003EC835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brezende.com.FarmaCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmaCalc.app/FarmaCalc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C9FC6C267C3CCF003EC835 /* Build configuration list for PBXProject "FarmaCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C9FC83267C3CCF003EC835 /* Debug */,
+				55C9FC84267C3CCF003EC835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C9FC85267C3CCF003EC835 /* Build configuration list for PBXNativeTarget "FarmaCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C9FC86267C3CCF003EC835 /* Debug */,
+				55C9FC87267C3CCF003EC835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C9FC92267C3F4C003EC835 /* Build configuration list for PBXNativeTarget "FarmaCalc_HG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C9FC93267C3F4C003EC835 /* Debug */,
+				55C9FC94267C3F4C003EC835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C9FCA2267C4068003EC835 /* Build configuration list for PBXNativeTarget "FarmaCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C9FCA3267C4068003EC835 /* Debug */,
+				55C9FCA4267C4068003EC835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+		55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPStorkController";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55A10865267F002E006597F4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		55A10867267F002E006597F4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		55A10869267F002E006597F4 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		55A1086B267F0049006597F4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		55A1086D267F0049006597F4 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		55A1086F267F0049006597F4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		55A10872267F0353006597F4 /* SPStorkController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */;
+			productName = SPStorkController;
+		};
+		55A10874267F0360006597F4 /* SPStorkController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */;
+			productName = SPStorkController;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 55C9FC69267C3CCF003EC835 /* Project object */;
+}
