@@ -9,14 +9,6 @@
 /* Begin PBXBuildFile section */
 		55A1085F267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
 		55A10860267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
-		55A10862267EFE4D006597F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55A10861267EFE4D006597F4 /* GoogleService-Info.plist */; };
-		55A10863267EFE4D006597F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55A10861267EFE4D006597F4 /* GoogleService-Info.plist */; };
-		55A10866267F002E006597F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10865267F002E006597F4 /* FirebaseAnalytics */; };
-		55A10868267F002E006597F4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10867267F002E006597F4 /* FirebaseFirestore */; };
-		55A1086A267F002E006597F4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10869267F002E006597F4 /* FirebaseCrashlytics */; };
-		55A1086C267F0049006597F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A1086B267F0049006597F4 /* FirebaseAnalytics */; };
-		55A1086E267F0049006597F4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55A1086D267F0049006597F4 /* FirebaseCrashlytics */; };
-		55A10870267F0049006597F4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 55A1086F267F0049006597F4 /* FirebaseFirestore */; };
 		55A10873267F0353006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10872267F0353006597F4 /* SPStorkController */; };
 		55A10875267F0360006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10874267F0360006597F4 /* SPStorkController */; };
 		55C9FC75267C3CCF003EC835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC74267C3CCF003EC835 /* AppDelegate.swift */; };
@@ -50,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		55A10861267EFE4D006597F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		55B915DC267C621100E7E368 /* Info_hg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_hg.plist; sourceTree = "<group>"; };
 		55C9FC71267C3CCF003EC835 /* FarmaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C9FC74267C3CCF003EC835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A10866267F002E006597F4 /* FirebaseAnalytics in Frameworks */,
-				55A1086A267F002E006597F4 /* FirebaseCrashlytics in Frameworks */,
-				55A10868267F002E006597F4 /* FirebaseFirestore in Frameworks */,
 				55A10873267F0353006597F4 /* SPStorkController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,9 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A1086E267F0049006597F4 /* FirebaseCrashlytics in Frameworks */,
-				55A10870267F0049006597F4 /* FirebaseFirestore in Frameworks */,
-				55A1086C267F0049006597F4 /* FirebaseAnalytics in Frameworks */,
 				55A10875267F0360006597F4 /* SPStorkController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,7 +143,6 @@
 				55C9FC7F267C3CCF003EC835 /* LaunchScreen.storyboard */,
 				55B915DC267C621100E7E368 /* Info_hg.plist */,
 				55C9FC82267C3CCF003EC835 /* Info.plist */,
-				55A10861267EFE4D006597F4 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,9 +229,6 @@
 			);
 			name = FarmaCalc;
 			packageProductDependencies = (
-				55A10865267F002E006597F4 /* FirebaseAnalytics */,
-				55A10867267F002E006597F4 /* FirebaseFirestore */,
-				55A10869267F002E006597F4 /* FirebaseCrashlytics */,
 				55A10872267F0353006597F4 /* SPStorkController */,
 			);
 			productName = FarmaCalc;
@@ -268,9 +249,6 @@
 			);
 			name = FarmaCalc_HG;
 			packageProductDependencies = (
-				55A1086B267F0049006597F4 /* FirebaseAnalytics */,
-				55A1086D267F0049006597F4 /* FirebaseCrashlytics */,
-				55A1086F267F0049006597F4 /* FirebaseFirestore */,
 				55A10874267F0360006597F4 /* SPStorkController */,
 			);
 			productName = FarmaCalc;
@@ -323,7 +301,6 @@
 			);
 			mainGroup = 55C9FC68267C3CCF003EC835;
 			packageReferences = (
-				55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */,
 			);
 			productRefGroup = 55C9FC72267C3CCF003EC835 /* Products */;
@@ -343,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A1085F267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */,
-				55A10862267EFE4D006597F4 /* GoogleService-Info.plist in Resources */,
 				55C9FC81267C3CCF003EC835 /* LaunchScreen.storyboard in Resources */,
 				55C9FC7E267C3CCF003EC835 /* Assets.xcassets in Resources */,
 			);
@@ -354,7 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A10860267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */,
-				55A10863267EFE4D006597F4 /* GoogleService-Info.plist in Resources */,
 				55C9FC90267C3F4C003EC835 /* LaunchScreen.storyboard in Resources */,
 				55C9FC91267C3F4C003EC835 /* Assets.xcassets in Resources */,
 			);
@@ -706,14 +681,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.1.1;
-			};
-		};
 		55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ivanvorobei/SPStorkController";
@@ -725,36 +692,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		55A10865267F002E006597F4 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		55A10867267F002E006597F4 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		55A10869267F002E006597F4 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-		55A1086B267F0049006597F4 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		55A1086D267F0049006597F4 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-		55A1086F267F0049006597F4 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 55A10864267F002E006597F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
 		55A10872267F0353006597F4 /* SPStorkController */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 55A10871267F0353006597F4 /* XCRemoteSwiftPackageReference "SPStorkController" */;
