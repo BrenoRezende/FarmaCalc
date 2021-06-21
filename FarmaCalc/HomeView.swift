@@ -23,6 +23,6 @@ class HomeView: UIView {
 extension HomeView {
     
     private func setup() {
-        backgroundColor = .init(hex: "#f2f5f5")
+        backgroundColor = .secondarySystemBackground
     }
 }

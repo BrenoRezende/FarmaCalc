@@ -17,22 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let homeVC = HomeViewController()
         let navController = UINavigationController(rootViewController: homeVC)
-        navController.navigationBar.prefersLargeTitles = true
 
         let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(named: "mainNavBarColor")
         
-        if let customFont = UIFont(name: "DancingScript-Regular", size: 25) {
-            appearance.titleTextAttributes = [NSAttributedString.Key.font: customFont]
-        }
-        
-        if let customFont = UIFont(name: "DancingScript-Regular_Bold", size: 32) {
-            appearance.largeTitleTextAttributes = [NSAttributedString.Key.font: customFont]
-        }
-
-        UINavigationBar.appearance().tintColor = .label
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().isTranslucent = false
         
         window?.rootViewController = navController
         window?.makeKeyAndVisible()

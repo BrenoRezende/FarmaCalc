@@ -17,6 +17,12 @@ import SPStorkController
 
 class HomeViewController: UIViewController {
     
+    private lazy var mainNavBar: MainNavTitleView = {
+        let view = MainNavTitleView(title: navTitle, subtitle: "medicine calculator")
+        view.delegate = self
+        return view
+    }()
+    
     override func loadView() {
         view = HomeView()
     }
@@ -30,19 +36,24 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     
     private func setup() {
-        title = navTitle
-        let newCalcButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addCalc))
-        navigationItem.rightBarButtonItem = newCalcButton
+        navigationItem.titleView = mainNavBar
+        
     }
     
     @objc func addCalc() {
         let controller = UIViewController()
-        controller.view.backgroundColor = .systemGreen
+        controller.view.backgroundColor = UIColor(named: "pastelGreenColor")
         let transitionDelegate = SPStorkTransitioningDelegate()
         controller.transitioningDelegate = transitionDelegate
         controller.modalPresentationStyle = .custom
         controller.modalPresentationCapturesStatusBarAppearance = true
         self.present(controller, animated: true, completion: nil)
+    }
+}
+
+extension HomeViewController: MainNavTitleViewDelegate {
+    func addButtonTapped() {
+        addCalc()
     }
 }
 
