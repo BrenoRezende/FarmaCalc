@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
     }()
     
     override func loadView() {
-        view = HomeView()
+        view = HomeTableView()
     }
 
     override func viewDidLoad() {
@@ -37,7 +37,6 @@ extension HomeViewController {
     
     private func setup() {
         navigationItem.titleView = mainNavBar
-        
     }
     
     @objc func addCalc() {

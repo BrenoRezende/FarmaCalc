@@ -11,13 +11,15 @@ struct IntegratedController<T: UIViewController>: UIViewControllerRepresentable 
     
     func makeUIViewController(context: Context) -> UINavigationController {
         let navController = UINavigationController(rootViewController: T())
-        navController.navigationBar.prefersLargeTitles = true
         
         let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(named: "mainNavBarColor")
+
         UINavigationBar.appearance().tintColor = .label
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().isTranslucent = false
         
         return navController
     }

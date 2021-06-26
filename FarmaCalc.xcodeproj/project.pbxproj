@@ -21,6 +21,12 @@
 		55A10860267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
 		55A10873267F0353006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10872267F0353006597F4 /* SPStorkController */; };
 		55A10875267F0360006597F4 /* SPStorkController in Frameworks */ = {isa = PBXBuildFile; productRef = 55A10874267F0360006597F4 /* SPStorkController */; };
+		55C0D9432686B0A600C1993D /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D9422686B0A600C1993D /* HomeTableView.swift */; };
+		55C0D9442686B0A600C1993D /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D9422686B0A600C1993D /* HomeTableView.swift */; };
+		55C0D9462686B0CB00C1993D /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D9452686B0CB00C1993D /* HomeTableCell.swift */; };
+		55C0D9472686B0CB00C1993D /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D9452686B0CB00C1993D /* HomeTableCell.swift */; };
+		55C0D9492686BF4C00C1993D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D9482686BF4C00C1993D /* UIViewExtensions.swift */; };
+		55C0D94A2686BF4C00C1993D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D9482686BF4C00C1993D /* UIViewExtensions.swift */; };
 		55C9FC75267C3CCF003EC835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC74267C3CCF003EC835 /* AppDelegate.swift */; };
 		55C9FC77267C3CCF003EC835 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC76267C3CCF003EC835 /* SceneDelegate.swift */; };
 		55C9FC7E267C3CCF003EC835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C9FC7D267C3CCF003EC835 /* Assets.xcassets */; };
@@ -32,8 +38,6 @@
 		55C9FC9E267C4068003EC835 /* FarmaCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FC9D267C4068003EC835 /* FarmaCalcTests.swift */; };
 		55C9FCA8267C41A5003EC835 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCA7267C41A5003EC835 /* HomeViewController.swift */; };
 		55C9FCA9267C41A5003EC835 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCA7267C41A5003EC835 /* HomeViewController.swift */; };
-		55C9FCAC267C41F6003EC835 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAB267C41F6003EC835 /* HomeView.swift */; };
-		55C9FCAD267C41F6003EC835 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAB267C41F6003EC835 /* HomeView.swift */; };
 		55C9FCB0267C42E6003EC835 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */; };
 		55C9FCB1267C42E6003EC835 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */; };
 		55C9FCB8267C5592003EC835 /* IntegratedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCB7267C5592003EC835 /* IntegratedController.swift */; };
@@ -56,6 +60,9 @@
 		5548F9A42680156B001B833C /* MainNavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavTitleView.swift; sourceTree = "<group>"; };
 		55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		55B915DC267C621100E7E368 /* Info_hg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_hg.plist; sourceTree = "<group>"; };
+		55C0D9422686B0A600C1993D /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		55C0D9452686B0CB00C1993D /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
+		55C0D9482686BF4C00C1993D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		55C9FC71267C3CCF003EC835 /* FarmaCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmaCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C9FC74267C3CCF003EC835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C9FC76267C3CCF003EC835 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +74,6 @@
 		55C9FC9D267C4068003EC835 /* FarmaCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmaCalcTests.swift; sourceTree = "<group>"; };
 		55C9FC9F267C4068003EC835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C9FCA7267C41A5003EC835 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		55C9FCAB267C41F6003EC835 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		55C9FCB7267C5592003EC835 /* IntegratedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratedController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,7 +230,8 @@
 		55C9FCAA267C41E4003EC835 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				55C9FCAB267C41F6003EC835 /* HomeView.swift */,
+				55C0D9422686B0A600C1993D /* HomeTableView.swift */,
+				55C0D9452686B0CB00C1993D /* HomeTableCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -233,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */,
+				55C0D9482686BF4C00C1993D /* UIViewExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -398,13 +406,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C0D9462686B0CB00C1993D /* HomeTableCell.swift in Sources */,
 				55C9FC75267C3CCF003EC835 /* AppDelegate.swift in Sources */,
-				55C9FCAC267C41F6003EC835 /* HomeView.swift in Sources */,
 				5548F9A52680156B001B833C /* MainNavTitleView.swift in Sources */,
 				55C9FC77267C3CCF003EC835 /* SceneDelegate.swift in Sources */,
 				551F8090267FE3A400A52997 /* HomeViewModel.swift in Sources */,
 				551F808D267FD72200A52997 /* DataManager.swift in Sources */,
 				55C9FCA8267C41A5003EC835 /* HomeViewController.swift in Sources */,
+				55C0D9432686B0A600C1993D /* HomeTableView.swift in Sources */,
+				55C0D9492686BF4C00C1993D /* UIViewExtensions.swift in Sources */,
 				55C9FCB0267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
 				55C9FCB8267C5592003EC835 /* IntegratedController.swift in Sources */,
 			);
@@ -414,13 +424,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C0D9472686B0CB00C1993D /* HomeTableCell.swift in Sources */,
 				55C9FC8C267C3F4C003EC835 /* AppDelegate.swift in Sources */,
 				551F8092267FE3A800A52997 /* DataManager.swift in Sources */,
 				5548F9A62680156B001B833C /* MainNavTitleView.swift in Sources */,
-				55C9FCAD267C41F6003EC835 /* HomeView.swift in Sources */,
 				551F8091267FE3A400A52997 /* HomeViewModel.swift in Sources */,
 				55C9FC8D267C3F4C003EC835 /* SceneDelegate.swift in Sources */,
 				55C9FCA9267C41A5003EC835 /* HomeViewController.swift in Sources */,
+				55C0D9442686B0A600C1993D /* HomeTableView.swift in Sources */,
+				55C0D94A2686BF4C00C1993D /* UIViewExtensions.swift in Sources */,
 				55C9FCB1267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
 				55C9FCB9267C5592003EC835 /* IntegratedController.swift in Sources */,
 			);

@@ -9,6 +9,22 @@ import UIKit
 
 extension UIColor {
     
+    class var allCustomColors: [UIColor?] {
+        return [
+            UIColor(named: "blueBellColor"),
+            UIColor(named: "gardeniaColor"),
+            UIColor(named: "lavenderColor"),
+            UIColor(named: "mainNavBarColor"),
+            UIColor(named: "mainSubtitleColor"),
+            UIColor(named: "mainTitleColor"),
+            UIColor(named: "pastelGreenColor"),
+            UIColor(named: "pastelGreenTintColor"),
+            UIColor(named: "peachColor"),
+            UIColor(named: "pinkishPinkColor"),
+            UIColor(named: "sweetGardenColor"),
+        ]
+    }
+    
     public convenience init?(hex: String) {
         let r, g, b: CGFloat
         
