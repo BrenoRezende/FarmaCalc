@@ -14,8 +14,6 @@ extension UIColor {
             UIColor(named: "blueBellColor"),
             UIColor(named: "gardeniaColor"),
             UIColor(named: "lavenderColor"),
-            UIColor(named: "mainNavBarColor"),
-            UIColor(named: "mainSubtitleColor"),
             UIColor(named: "mainTitleColor"),
             UIColor(named: "pastelGreenColor"),
             UIColor(named: "pastelGreenTintColor"),

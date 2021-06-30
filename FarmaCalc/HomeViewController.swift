@@ -23,6 +23,18 @@ class HomeViewController: UIViewController {
         return view
     }()
     
+    private let viewModel: IHomeViewModel
+    
+    init(viewModel: IHomeViewModel = HomeViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.viewModel = HomeViewModel()
+        super.init(coder: coder)
+    }
+    
     override func loadView() {
         view = HomeTableView()
     }
@@ -37,6 +49,9 @@ extension HomeViewController {
     
     private func setup() {
         navigationItem.titleView = mainNavBar
+        if let view = view as? HomeTableView {
+            view.set(dto: viewModel.dto)
+        }
     }
     
     @objc func addCalc() {

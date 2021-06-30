@@ -7,6 +7,20 @@
 
 import Foundation
 
-class HomeViewModel {
+protocol IHomeViewModel {
+    var dto: [HomeViewDTO] { get }
+}
+
+class HomeViewModel: IHomeViewModel {
     
+    var dto: [HomeViewDTO] {
+        return [
+            HomeViewDTO(title: "Sample calc"),
+            HomeViewDTO(title: "Sample calc"),
+            HomeViewDTO(title: "Sample calc"),
+            HomeViewDTO(title: "Sample calc"),
+            HomeViewDTO(title: "Sample calc"),
+            HomeViewDTO(title: "Sample calc"),
+        ]
+    }
 }

@@ -43,9 +43,9 @@ class HomeTableCell: UITableViewCell {
 
 extension HomeTableCell {
     
-    func set(title: String) {
+    func set(title: String, backgroundColor: UIColor?) {
         titleLabel.text = title
-        if let color = UIColor.allCustomColors.randomElement() {
+        if let color = backgroundColor {
             containerView.backgroundColor = color
         }
     }
@@ -56,8 +56,8 @@ extension HomeTableCell {
         contentView.addSubview(titleLabel)
         contentView.addSubview(containerView)
         
-        titleLabel.fill(top: contentView.topAnchor, left: contentView.leftAnchor, right: contentView.rightAnchor, andEdgeInsets: UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0))
-        containerView.fill(top: titleLabel.bottomAnchor, left: contentView.leftAnchor, bottom: contentView.bottomAnchor, right: contentView.rightAnchor, andEdgeInsets: UIEdgeInsets(top: 10, left: 0, bottom: 5, right: 0))
+        titleLabel.fill(top: contentView.topAnchor, left: contentView.leftAnchor, right: contentView.rightAnchor, andEdgeInsets: UIEdgeInsets(top: 5, left: 16, bottom: 0, right: 16))
+        containerView.fill(top: titleLabel.bottomAnchor, left: titleLabel.leftAnchor, bottom: contentView.bottomAnchor, right: titleLabel.rightAnchor, andEdgeInsets: UIEdgeInsets(top: 10, left: 0, bottom: 5, right: 0))
     }
 }
 
