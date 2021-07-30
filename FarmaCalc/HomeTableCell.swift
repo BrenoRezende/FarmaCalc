@@ -10,8 +10,8 @@ import UIKit
 class HomeTableCell: UITableViewCell {
     
     static var reuseIdentifier: String = "home_table_cell_id"
-    
-    var titleLabel: UILabel = {
+        
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(named: "mainTitleColor")
@@ -21,7 +21,7 @@ class HomeTableCell: UITableViewCell {
         return label
     }()
     
-    var containerView: UIView = {
+    private lazy var containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.heightAnchor.constraint(equalToConstant: 100).isActive = true

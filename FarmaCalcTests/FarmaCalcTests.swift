@@ -9,5 +9,9 @@ import XCTest
 @testable import FarmaCalc
 
 class FarmaCalcTests: XCTestCase {
-
+    
+    func testAllColor() {
+        let colors = UIColor.allCustomColors
+        XCTAssert(colors.count == 9)
+    }
 }

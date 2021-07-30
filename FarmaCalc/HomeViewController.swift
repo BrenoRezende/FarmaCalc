@@ -55,8 +55,9 @@ extension HomeViewController {
     }
     
     @objc func addCalc() {
-        let controller = UIViewController()
-        controller.view.backgroundColor = UIColor(named: "pastelGreenColor")
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let controller = DilutionCollectionViewController(collectionViewLayout: layout)
         let transitionDelegate = SPStorkTransitioningDelegate()
         controller.transitioningDelegate = transitionDelegate
         controller.modalPresentationStyle = .custom

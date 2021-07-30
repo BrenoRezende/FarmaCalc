@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
        
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
+        let window = UIWindow(windowScene: windowScene)
         let homeVC = HomeViewController()
         let navController = UINavigationController(rootViewController: homeVC)
 
@@ -26,8 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().isTranslucent = false
         
-        window?.rootViewController = navController
-        window?.makeKeyAndVisible()
+        window.rootViewController = navController
+        self.window = window
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
