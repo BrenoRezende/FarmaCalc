@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftUI
-import SPStorkController
 
 #if HG
     let navTitle = "FarmaCalc HG"
@@ -15,7 +14,11 @@ import SPStorkController
     let navTitle = "FarmaCalc"
 #endif
 
-class HomeViewController: UIViewController {
+protocol AnyHomeView: AnyObject {
+    func showSavedCalculations(dto: [HomeViewDTO])
+}
+
+class HomeViewController: UIViewController, AnyHomeView {
     
     private lazy var mainNavBar: MainNavTitleView = {
         let view = MainNavTitleView(title: navTitle, subtitle: "medicine calculator")
@@ -23,17 +26,7 @@ class HomeViewController: UIViewController {
         return view
     }()
     
-    private let viewModel: IHomeViewModel
-    
-    init(viewModel: IHomeViewModel = HomeViewModel()) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        self.viewModel = HomeViewModel()
-        super.init(coder: coder)
-    }
+    var presenter: AnyHomePresenter!
     
     override func loadView() {
         view = HomeTableView()
@@ -49,31 +42,24 @@ extension HomeViewController {
     
     private func setup() {
         navigationItem.titleView = mainNavBar
-        if let view = view as? HomeTableView {
-            view.set(dto: viewModel.dto)
-        }
+        presenter.getSavedCalculations()
     }
     
-    @objc func addCalc() {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let controller = DilutionCollectionViewController(collectionViewLayout: layout)
-        let transitionDelegate = SPStorkTransitioningDelegate()
-        controller.transitioningDelegate = transitionDelegate
-        controller.modalPresentationStyle = .custom
-        controller.modalPresentationCapturesStatusBarAppearance = true
-        self.present(controller, animated: true, completion: nil)
+    func showSavedCalculations(dto: [HomeViewDTO]) {
+        if let view = view as? HomeTableView {
+            view.set(dto: dto)
+        }
     }
 }
 
 extension HomeViewController: MainNavTitleViewDelegate {
     func addButtonTapped() {
-        addCalc()
+        presenter.addButtonTapped()
     }
 }
 
-struct HomeViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        IntegratedController<HomeViewController>().edgesIgnoringSafeArea(.vertical)
-    }
-}
+//struct HomeViewController_Previews: PreviewProvider {
+//    static var previews: some View {
+//        IntegratedController<HomeViewController>().edgesIgnoringSafeArea(.vertical)
+//    }
+//}

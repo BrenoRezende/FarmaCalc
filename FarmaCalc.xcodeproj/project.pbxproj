@@ -12,9 +12,13 @@
 		551F8088267FD19600A52997 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8087267FD19600A52997 /* Realm */; };
 		551F808A267FD19600A52997 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 551F8089267FD19600A52997 /* RealmSwift */; };
 		551F808D267FD72200A52997 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808C267FD72200A52997 /* DataManager.swift */; };
-		551F8090267FE3A400A52997 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808F267FE3A400A52997 /* HomeViewModel.swift */; };
-		551F8091267FE3A400A52997 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808F267FE3A400A52997 /* HomeViewModel.swift */; };
 		551F8092267FE3A800A52997 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F808C267FD72200A52997 /* DataManager.swift */; };
+		5526FC1226C4CD150029358C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526FC1126C4CD150029358C /* HomeRouter.swift */; };
+		5526FC1326C4CD150029358C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526FC1126C4CD150029358C /* HomeRouter.swift */; };
+		5526FC1526C4D0BD0029358C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526FC1426C4D0BD0029358C /* HomePresenter.swift */; };
+		5526FC1626C4D0BD0029358C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526FC1426C4D0BD0029358C /* HomePresenter.swift */; };
+		5526FC1826C4DD700029358C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526FC1726C4DD700029358C /* HomeInteractor.swift */; };
+		5526FC1926C4DD700029358C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526FC1726C4DD700029358C /* HomeInteractor.swift */; };
 		5548F9A52680156B001B833C /* MainNavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548F9A42680156B001B833C /* MainNavTitleView.swift */; };
 		5548F9A62680156B001B833C /* MainNavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548F9A42680156B001B833C /* MainNavTitleView.swift */; };
 		55A1085F267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */; };
@@ -58,7 +62,9 @@
 
 /* Begin PBXFileReference section */
 		551F808C267FD72200A52997 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		551F808F267FE3A400A52997 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5526FC1126C4CD150029358C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		5526FC1426C4D0BD0029358C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		5526FC1726C4DD700029358C /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		5548F9A42680156B001B833C /* MainNavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavTitleView.swift; sourceTree = "<group>"; };
 		55A1085E267EF74F006597F4 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		55B915DC267C621100E7E368 /* Info_hg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_hg.plist; sourceTree = "<group>"; };
@@ -120,20 +126,36 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
-		551F808E267FE39600A52997 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				551F808F267FE3A400A52997 /* HomeViewModel.swift */,
-			);
-			name = ViewModels;
-			sourceTree = "<group>";
-		};
 		5548F9A326801559001B833C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5548F9A42680156B001B833C /* MainNavTitleView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		55497B5326BA21EB00B0E713 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5526FC1426C4D0BD0029358C /* HomePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		55497B5426BA22D000B0E713 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5526FC1726C4DD700029358C /* HomeInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		55497B5526BA22DB00B0E713 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5526FC1126C4CD150029358C /* HomeRouter.swift */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 		55A1085C267EF702006597F4 /* External */ = {
@@ -176,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				55C9FCBA267C57A3003EC835 /* Common */,
-				55C9FC89267C3DDA003EC835 /* Components */,
+				55C9FC89267C3DDA003EC835 /* Modules */,
 				55C9FC88267C3CEB003EC835 /* Supporting Files */,
 			);
 			path = FarmaCalc;
@@ -195,13 +217,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		55C9FC89267C3DDA003EC835 /* Components */ = {
+		55C9FC89267C3DDA003EC835 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				55D0B5B3268FF944006648D4 /* Dilution */,
 				55C9FCA5267C411D003EC835 /* Home */,
 			);
-			name = Components;
+			name = Modules;
 			sourceTree = "<group>";
 		};
 		55C9FC9C267C4068003EC835 /* FarmaCalcTests */ = {
@@ -216,28 +238,22 @@
 		55C9FCA5267C411D003EC835 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				551F808E267FE39600A52997 /* ViewModels */,
-				55C9FCAA267C41E4003EC835 /* Views */,
-				55C9FCA6267C418A003EC835 /* ViewControllers */,
+				55497B5526BA22DB00B0E713 /* Router */,
+				55497B5426BA22D000B0E713 /* Interactor */,
+				55497B5326BA21EB00B0E713 /* Presenter */,
+				55C9FCAA267C41E4003EC835 /* View */,
 			);
 			name = Home;
 			sourceTree = "<group>";
 		};
-		55C9FCA6267C418A003EC835 /* ViewControllers */ = {
+		55C9FCAA267C41E4003EC835 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				55C9FCA7267C41A5003EC835 /* HomeViewController.swift */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		55C9FCAA267C41E4003EC835 /* Views */ = {
-			isa = PBXGroup;
-			children = (
 				55C0D9422686B0A600C1993D /* HomeTableView.swift */,
 				55C0D9452686B0CB00C1993D /* HomeTableCell.swift */,
 			);
-			name = Views;
+			name = View;
 			sourceTree = "<group>";
 		};
 		55C9FCAE267C42D1003EC835 /* Extensions */ = {
@@ -447,13 +463,15 @@
 				55D0B5B5268FF95E006648D4 /* DilutionCollectionViewController.swift in Sources */,
 				5548F9A52680156B001B833C /* MainNavTitleView.swift in Sources */,
 				55C9FC77267C3CCF003EC835 /* SceneDelegate.swift in Sources */,
-				551F8090267FE3A400A52997 /* HomeViewModel.swift in Sources */,
+				5526FC1226C4CD150029358C /* HomeRouter.swift in Sources */,
+				5526FC1526C4D0BD0029358C /* HomePresenter.swift in Sources */,
 				551F808D267FD72200A52997 /* DataManager.swift in Sources */,
 				55C9FCA8267C41A5003EC835 /* HomeViewController.swift in Sources */,
 				55C0D9432686B0A600C1993D /* HomeTableView.swift in Sources */,
 				55C0D9492686BF4C00C1993D /* UIViewExtensions.swift in Sources */,
 				55C9FCB0267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
 				55C9FCB8267C5592003EC835 /* IntegratedController.swift in Sources */,
+				5526FC1826C4DD700029358C /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,13 +484,15 @@
 				55D0B5B6268FF95E006648D4 /* DilutionCollectionViewController.swift in Sources */,
 				551F8092267FE3A800A52997 /* DataManager.swift in Sources */,
 				5548F9A62680156B001B833C /* MainNavTitleView.swift in Sources */,
-				551F8091267FE3A400A52997 /* HomeViewModel.swift in Sources */,
+				5526FC1326C4CD150029358C /* HomeRouter.swift in Sources */,
+				5526FC1626C4D0BD0029358C /* HomePresenter.swift in Sources */,
 				55C9FC8D267C3F4C003EC835 /* SceneDelegate.swift in Sources */,
 				55C9FCA9267C41A5003EC835 /* HomeViewController.swift in Sources */,
 				55C0D9442686B0A600C1993D /* HomeTableView.swift in Sources */,
 				55C0D94A2686BF4C00C1993D /* UIViewExtensions.swift in Sources */,
 				55C9FCB1267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
 				55C9FCB9267C5592003EC835 /* IntegratedController.swift in Sources */,
+				5526FC1926C4DD700029358C /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +648,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9EJ4448SJB;
 				INFOPLIST_FILE = FarmaCalc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,6 +669,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9EJ4448SJB;
 				INFOPLIST_FILE = FarmaCalc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -14,9 +14,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
        
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
-        let homeVC = HomeViewController()
-        let navController = UINavigationController(rootViewController: homeVC)
+
+        let homeRouter = HomeRouter.start()
+        let navController = UINavigationController(rootViewController: homeRouter.view ?? UIViewController())
 
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(named: "mainNavBarColor")
@@ -26,6 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().isTranslucent = false
         
+        let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navController
         self.window = window
         window.makeKeyAndVisible()
