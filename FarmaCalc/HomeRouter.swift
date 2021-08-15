@@ -41,9 +41,8 @@ class HomeRouter: AnyHomeRouter {
     }
     
     func goToDilutionView() {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let controller = DilutionCollectionViewController(collectionViewLayout: layout)
+
+        let controller = DilutionViewController()
         let transitionDelegate = SPStorkTransitioningDelegate()
         controller.transitioningDelegate = transitionDelegate
         controller.modalPresentationStyle = .custom

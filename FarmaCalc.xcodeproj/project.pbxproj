@@ -48,6 +48,10 @@
 		55C9FCB9267C5592003EC835 /* IntegratedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9FCB7267C5592003EC835 /* IntegratedController.swift */; };
 		55D0B5B5268FF95E006648D4 /* DilutionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0B5B4268FF95E006648D4 /* DilutionCollectionViewController.swift */; };
 		55D0B5B6268FF95E006648D4 /* DilutionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0B5B4268FF95E006648D4 /* DilutionCollectionViewController.swift */; };
+		55FACD3A26C8C5D300D563D4 /* DilutionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FACD3926C8C5D300D563D4 /* DilutionCollectionView.swift */; };
+		55FACD3B26C8C5D300D563D4 /* DilutionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FACD3926C8C5D300D563D4 /* DilutionCollectionView.swift */; };
+		55FBEE1726C58A58001BAEAE /* DilutionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBEE1626C58A58001BAEAE /* DilutionRouter.swift */; };
+		55FBEE1826C58A58001BAEAE /* DilutionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBEE1626C58A58001BAEAE /* DilutionRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,8 @@
 		55C9FCAF267C42E6003EC835 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		55C9FCB7267C5592003EC835 /* IntegratedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratedController.swift; sourceTree = "<group>"; };
 		55D0B5B4268FF95E006648D4 /* DilutionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilutionCollectionViewController.swift; sourceTree = "<group>"; };
+		55FACD3926C8C5D300D563D4 /* DilutionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilutionCollectionView.swift; sourceTree = "<group>"; };
+		55FBEE1626C58A58001BAEAE /* DilutionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilutionRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,33 +293,43 @@
 		55D0B5B3268FF944006648D4 /* Dilution */ = {
 			isa = PBXGroup;
 			children = (
-				55D0B5B9268FF9A0006648D4 /* ViewModels */,
-				55D0B5B8268FF99B006648D4 /* Views */,
-				55D0B5B7268FF98D006648D4 /* ViewControllers */,
+				55D0B5B7268FF98D006648D4 /* Router */,
+				55FBEE1526C58966001BAEAE /* Interactor */,
+				55D0B5B9268FF9A0006648D4 /* Presenter */,
+				55D0B5B8268FF99B006648D4 /* View */,
 			);
 			name = Dilution;
 			sourceTree = "<group>";
 		};
-		55D0B5B7268FF98D006648D4 /* ViewControllers */ = {
+		55D0B5B7268FF98D006648D4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				55FBEE1626C58A58001BAEAE /* DilutionRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		55D0B5B8268FF99B006648D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				55D0B5B4268FF95E006648D4 /* DilutionCollectionViewController.swift */,
+				55FACD3926C8C5D300D563D4 /* DilutionCollectionView.swift */,
 			);
-			path = ViewControllers;
+			path = View;
 			sourceTree = "<group>";
 		};
-		55D0B5B8268FF99B006648D4 /* Views */ = {
+		55D0B5B9268FF9A0006648D4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Views;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		55D0B5B9268FF9A0006648D4 /* ViewModels */ = {
+		55FBEE1526C58966001BAEAE /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,12 +480,14 @@
 				5548F9A52680156B001B833C /* MainNavTitleView.swift in Sources */,
 				55C9FC77267C3CCF003EC835 /* SceneDelegate.swift in Sources */,
 				5526FC1226C4CD150029358C /* HomeRouter.swift in Sources */,
+				55FACD3A26C8C5D300D563D4 /* DilutionCollectionView.swift in Sources */,
 				5526FC1526C4D0BD0029358C /* HomePresenter.swift in Sources */,
 				551F808D267FD72200A52997 /* DataManager.swift in Sources */,
 				55C9FCA8267C41A5003EC835 /* HomeViewController.swift in Sources */,
 				55C0D9432686B0A600C1993D /* HomeTableView.swift in Sources */,
 				55C0D9492686BF4C00C1993D /* UIViewExtensions.swift in Sources */,
 				55C9FCB0267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
+				55FBEE1726C58A58001BAEAE /* DilutionRouter.swift in Sources */,
 				55C9FCB8267C5592003EC835 /* IntegratedController.swift in Sources */,
 				5526FC1826C4DD700029358C /* HomeInteractor.swift in Sources */,
 			);
@@ -485,12 +503,14 @@
 				551F8092267FE3A800A52997 /* DataManager.swift in Sources */,
 				5548F9A62680156B001B833C /* MainNavTitleView.swift in Sources */,
 				5526FC1326C4CD150029358C /* HomeRouter.swift in Sources */,
+				55FACD3B26C8C5D300D563D4 /* DilutionCollectionView.swift in Sources */,
 				5526FC1626C4D0BD0029358C /* HomePresenter.swift in Sources */,
 				55C9FC8D267C3F4C003EC835 /* SceneDelegate.swift in Sources */,
 				55C9FCA9267C41A5003EC835 /* HomeViewController.swift in Sources */,
 				55C0D9442686B0A600C1993D /* HomeTableView.swift in Sources */,
 				55C0D94A2686BF4C00C1993D /* UIViewExtensions.swift in Sources */,
 				55C9FCB1267C42E6003EC835 /* UIColorExtensions.swift in Sources */,
+				55FBEE1826C58A58001BAEAE /* DilutionRouter.swift in Sources */,
 				55C9FCB9267C5592003EC835 /* IntegratedController.swift in Sources */,
 				5526FC1926C4DD700029358C /* HomeInteractor.swift in Sources */,
 			);
