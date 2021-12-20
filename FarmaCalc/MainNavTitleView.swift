@@ -81,7 +81,7 @@ class MainNavTitleView: UIView {
 
 extension MainNavTitleView {
     
-    //MARK: =============== setup ===============
+    //MARK: =============== Setup ===============
     
     func set(title: String, subtitle: String) {
         titleLabel.text = title
